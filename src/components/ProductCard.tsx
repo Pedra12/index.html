@@ -3,6 +3,7 @@ import { formatCurrency } from '../utils/format';
 import { Plus } from 'lucide-react';
 
 interface ProductCardProps {
+  key?: string | number;
   product: Product;
   onClick: (product: Product) => void;
 }

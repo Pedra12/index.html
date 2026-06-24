@@ -1,6 +1,6 @@
 import { CartItem } from '../types';
 import { formatCurrency } from '../utils/format';
-import { X, Trash2, Plus, Minus, ArrowRight } from 'lucide-react';
+import { X, Trash2, Plus, Minus, ArrowRight, ShoppingBag } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface CartDrawerProps {

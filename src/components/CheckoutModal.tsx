@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { CartItem } from '../types';
 import { formatCurrency } from '../utils/format';
 import { X, Check, MapPin, CreditCard, Banknote, SmartphoneNfc } from 'lucide-react';

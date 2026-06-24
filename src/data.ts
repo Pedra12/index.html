@@ -5,11 +5,12 @@ import imgComboCasal from './assets/images/combo_casal_1782257767822.jpg';
 import imgGorgonzola from './assets/images/gorgonzola_premium_1782257780407.jpg';
 import imgXTudo from './assets/images/x_tudo_1782258121501.jpg';
 import imgCachorroQuente from './assets/images/cachorro_quente_1782258132275.jpg';
-import imgFantaUva from './assets/images/fanta_uva_1782258143587.jpg';
-import imgFantaLaranja from './assets/images/fanta_laranja_1782258153078.jpg';
-import imgHeineken from './assets/images/cerveja_heineken_1782258163774.jpg';
-import imgVermelha from './assets/images/cerveja_vermelha_1782258174159.jpg';
-import imgGuaravita from './assets/images/guaravita_1782258185528.jpg';
+import imgFantaUva from './assets/images/fanta_uva_real.jpeg';
+import imgFantaLaranja from './assets/images/fanta_laranja_real.webp';
+import imgGuaravita from './assets/images/guaravita_real.jpeg';
+import imgAmstel from './assets/images/amstel_real.jpg';
+import imgHeineken from './assets/images/cerveja_heineken_nova.jpg';
+import imgBrahma from './assets/images/cerveja_brahma.jpeg';
 import imgHamburguerSimples from './assets/images/hamburguer_simples_1782258204237.jpg';
 import imgCoroaCola from './assets/images/coroa_cola_1782258216125.jpg';
 
@@ -24,11 +25,13 @@ export const CATEGORIES = [
 ];
 
 export const PRODUCTS: Product[] = [
-  { id: 'p0', categoryId: 'tradicionais', name: 'Hambúrguer', description: 'Pão brioche, blend de carne 120g e molho especial.', price: 15.90, image: imgHamburguerSimples },
-  { id: 'p1', categoryId: 'tradicionais', name: 'X-Burger', description: 'Pão brioche, blend de carne 120g e queijo prato derretido.', price: 18.90, image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80' },
-  { id: 'p2', categoryId: 'tradicionais', name: 'X-Salada', description: 'Pão brioche, blend 120g, queijo prato, alface americana e tomate fresco.', price: 21.90, image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=500&q=80' },
-  { id: 'p3', categoryId: 'tradicionais', name: 'X-Bacon', description: 'Pão brioche, blend 120g, queijo prato e muito bacon crocante.', price: 25.90, image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=500&q=80' },
-  { id: 'p_xtudo', categoryId: 'tradicionais', name: 'X-Tudo', description: 'Pão brioche, blend 120g, queijo prato, bacon, ovo, calabresa, alface, tomate e batata palha.', price: 32.90, image: imgXTudo },
+  { id: 'p0', categoryId: 'tradicionais', name: 'Hambúrguer', description: 'Pão de hambúrguer, carne bovina tradicional 56g, alface, tomate e batata palha.', price: 15.90, image: imgHamburguerSimples },
+  { id: 'p1', categoryId: 'tradicionais', name: 'X-Burger', description: 'Pão de hambúrguer, carne bovina tradicional 56g, queijo prato derretido, alface, tomate e batata palha.', price: 18.90, image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80' },
+  { id: 'p2', categoryId: 'tradicionais', name: 'X-Salada', description: 'Pão de hambúrguer, carne bovina tradicional 56g, queijo prato, alface americana, tomate fresco e batata palha.', price: 21.90, image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=500&q=80' },
+  { id: 'p3', categoryId: 'tradicionais', name: 'X-Bacon', description: 'Pão de hambúrguer, carne bovina tradicional 56g, queijo prato, muito bacon crocante, alface, tomate e batata palha.', price: 25.90, image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=500&q=80' },
+  { id: 'p_xegg', categoryId: 'tradicionais', name: 'X-Egg', description: 'Pão de hambúrguer, carne bovina tradicional 56g, ovo frito, queijo prato, alface, tomate e batata palha.', price: 22.90, image: imgHamburguerSimples },
+  { id: 'p_xeggbacon', categoryId: 'tradicionais', name: 'X-Egg Bacon', description: 'Pão de hambúrguer, carne bovina tradicional 56g, ovo frito, bacon crocante, queijo prato, alface, tomate e batata palha.', price: 27.90, image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=500&q=80' },
+  { id: 'p_xtudo', categoryId: 'tradicionais', name: 'X-Tudo', description: 'Pão de hambúrguer, carne bovina tradicional 56g, queijo prato, bacon, ovo, calabresa, presunto, alface, tomate e batata palha.', price: 32.90, image: imgXTudo },
   
   { id: 'cq1', categoryId: 'cachorro_quente', name: 'Cachorro Quente Tradicional', description: 'Pão macio, salsicha, molho de tomate, milho, batata palha e queijo ralado.', price: 12.00, image: imgCachorroQuente },
   { id: 'cq2', categoryId: 'cachorro_quente', name: 'Cachorro Quente Duplo', description: 'Pão macio, 2 salsichas, muito molho, milho, batata palha e queijo ralado.', price: 16.00, image: imgCachorroQuente },
@@ -43,8 +46,8 @@ export const PRODUCTS: Product[] = [
   { id: 'p_fanta_uva', categoryId: 'bebidas', name: 'Fanta Uva Lata', description: '350ml - Geladinha', price: 6.00, image: imgFantaUva },
   { id: 'p_fanta_lar', categoryId: 'bebidas', name: 'Fanta Laranja Lata', description: '350ml - Geladinha', price: 6.00, image: imgFantaLaranja },
   { id: 'p_guaravita', categoryId: 'bebidas', name: 'Guaravita', description: 'Copo 290ml', price: 3.50, image: imgGuaravita },
-  { id: 'p_brahma', categoryId: 'bebidas', name: 'Brahma Latão', description: '473ml - Estupidamente gelada', price: 8.00, image: imgVermelha },
-  { id: 'p_amstel', categoryId: 'bebidas', name: 'Amstel Latão', description: '473ml - Puro malte gelada', price: 8.50, image: imgVermelha },
+  { id: 'p_brahma', categoryId: 'bebidas', name: 'Brahma Latão', description: '473ml - Estupidamente gelada', price: 8.00, image: imgBrahma },
+  { id: 'p_amstel', categoryId: 'bebidas', name: 'Amstel Latão', description: '473ml - Puro malte gelada', price: 8.50, image: imgAmstel },
   { id: 'p_heineken', categoryId: 'bebidas', name: 'Heineken Latão', description: '473ml - Premium gelada', price: 10.00, image: imgHeineken },
   { id: 'p8', categoryId: 'bebidas', name: 'Suco de Laranja', description: 'Natural 500ml', price: 10.00, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=500&q=80' },
   
