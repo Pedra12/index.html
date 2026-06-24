@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Header } from './components/Header';
+import { PromoBanner } from './components/PromoBanner';
 import { ProductCard } from './components/ProductCard';
 import { ProductModal } from './components/ProductModal';
 import { AcaiModal } from './components/AcaiModal';
@@ -86,8 +87,14 @@ export default function App() {
         onOpenHistory={() => setIsHistoryOpen(true)}
       />
 
+      {!searchQuery && (
+        <div className="max-w-4xl mx-auto px-4 mt-4">
+          <PromoBanner />
+        </div>
+      )}
+
       {/* Sticky Categories Navigation */}
-      <div className="sticky top-0 z-40 bg-zinc-50/90 backdrop-blur-md shadow-sm border-b border-zinc-200 py-3 mt-4">
+      <div className="sticky top-0 z-40 bg-zinc-50/90 backdrop-blur-md shadow-sm border-b border-zinc-200 py-3">
         <div className="flex overflow-x-auto hide-scrollbar px-4 gap-2 pb-1">
           {CATEGORIES.map(category => (
             <button

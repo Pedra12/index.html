@@ -69,8 +69,15 @@ export function ProductModal({ product, isOpen, onClose, onAdd }: ProductModalPr
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
             className="fixed inset-x-0 bottom-0 z-50 bg-white rounded-t-3xl max-h-[90vh] flex flex-col overflow-hidden shadow-2xl"
           >
-            <div className="relative h-48 sm:h-64 shrink-0 bg-zinc-100">
-              <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+            <div className="relative h-48 sm:h-64 shrink-0 bg-zinc-100 overflow-hidden">
+              <motion.img 
+                src={product.image} 
+                alt={product.name} 
+                className="w-full h-full object-cover origin-center"
+                initial={{ scale: 1 }}
+                animate={{ scale: [1, 1.15, 1] }}
+                transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+              />
               <button 
                 onClick={onClose}
                 className="absolute top-4 right-4 bg-white/80 backdrop-blur text-zinc-900 p-2 rounded-full shadow-sm"
